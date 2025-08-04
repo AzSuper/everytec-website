@@ -9,7 +9,7 @@ import { FaPlus } from "react-icons/fa";
 
 const LeftHeroSide = () => {
   return (
-    <div className="w-full md:w-full lg:w-[70%] h-screen mr-4">
+    <div className="w-full md:w-full lg:w-[70%] h-fit mb-16 md:h-screen lg:h-screen mr-4 px-3">
       <TitleCapsule
         text={"Your Tech Journey Starts Here"}
         icon={<IoSparklesOutline className="text-purple-600" />}
@@ -38,9 +38,9 @@ const LeftHeroSide = () => {
       <div className="line w-[100%] md:w-[80%] lg:w-[85%] h-[0.8px] bg-[#efefef56] rounded-full mt-12" />
       <div className="flex flex-row gap-22 mt-8">
         <div className="flex flex-col">
-          <div className="flex flex-row gap-2 text-xl">
+          <div className="flex flex-row gap-2 text-md md:text-xl lg:text-xl">
             🚀
-            <span className="font-neue text-md flex flex-row items-center text-purple-700">
+            <span className="font-neue text-sm md:text-md lg:text-md flex flex-row items-center text-purple-700">
               100
               <FaPlus className="w-3" />
             </span>
@@ -50,7 +50,7 @@ const LeftHeroSide = () => {
         <div className="flex flex-col">
           <div className="flex flex-row gap-2 text-xl items-center">
             ⭐
-            <span className="font-neue text-md flex flex-row items-center text-purple-700">
+            <span className="font-neue text-sm md:text-md lg:text-md flex flex-row items-center text-purple-700">
               5
               <FaPlus className="w-3" />
             </span>
@@ -60,7 +60,7 @@ const LeftHeroSide = () => {
         <div className="flex flex-col">
           <div className="flex flex-row gap-2 text-xl">
             💪
-            <span className="font-neue text-md flex flex-row items-center text-purple-700">
+            <span className="font-neue text-sm md:text-md lg:text-md flex flex-row items-center text-purple-700">
               24/7
             </span>
           </div>

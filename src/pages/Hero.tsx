@@ -37,7 +37,7 @@ const Hero = () => {
         scale,
         opacity,
       }}
-      className="w-full z-40 flex flex-col justify-between md:flex-col lg:flex-row overflow-hidden"
+      className="min-h-screen flex flex-col content-center md:flex-row lg:flex-row items-center justify-center relative overflow-hidden pt-16 mx-auto px-4 md:px-28 lg:px-32 mt-9"
     >
       <div id="stars"></div>
       <LeftHeroSide />

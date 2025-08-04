@@ -187,7 +187,7 @@ export function JourneyVisualization() {
   return (
     <section
       ref={containerRef}
-      className="py-16 sm:py-20 lg:py-32 absolute left-0 w-full overflow-hidden px-16 mb-12"
+      className="py-16 sm:py-20 lg:py-32 relative left-0 w-full overflow-hidden px-16 mb-12"
     >
       {/* Background Effects */}
 
