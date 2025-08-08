@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold text-gradient mb-4">evrytec</div>
+            <div className="text-2xl font-bold text-gradient mb-4">EvryTec</div>
             <p className="text-muted-foreground mb-6 max-w-md">
               Your trusted partner in digital transformation. We're with you
               every step of the way, from concept to success.
@@ -28,7 +28,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail size={16} />
-                <span>hello@evrytec.com</span>
+                <span>hello@EvryTec.com</span>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ export function Footer() {
         {/* Bottom section */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-sm text-muted-foreground">
-            © {currentYear} evrytec. All rights reserved.
+            © {currentYear} EvryTec. All rights reserved.
           </div>
 
           <div className="flex items-center gap-4">

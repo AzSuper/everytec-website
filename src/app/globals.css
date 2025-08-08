@@ -12,12 +12,12 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0a0f1c 0%, #1e293b 100%);
-  font-family: "Montserrat", sans-serif;
-    color: aliceblue;
+	background: linear-gradient(135deg, #0a0f1c 0%, #1e293b 100%);
+	font-family: "Montserrat", sans-serif;
+	color: aliceblue;
 }
 
-.font-neue{
+.font-neue {
 	font-family: 'Neue';
 }
 
@@ -131,11 +131,12 @@ body {
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+	* {
+		@apply border-border outline-ring/50;
 	}
-  body {
-    @apply bg-background text-foreground;
+
+	body {
+		@apply bg-background text-foreground;
 	}
 }
 
@@ -143,53 +144,87 @@ body {
 
 /* //////////////////////////buttons animations//////////////////////////////////////////// */
 
-.reflect::before{
-  content: "";
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  left: -90;
-  background: #ffffff2a;
-  rotate: 25deg;
-  transition: all 1s;
+.reflect::before {
+	content: "";
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: -90;
+	background: #ffffff2a;
+	rotate: 25deg;
+	transition: all 1s;
 }
 
-.reflect:hover::before{
-    left: 240;
+.reflect:hover::before {
+	left: 240;
 }
 
 
-.reflect-2::before{
-  content: "";
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  left: -90;
-  bottom: -100;
-  background: #6f6d8190;
-  border-radius: 100%;
-  transition: ease-in 0.7s;
+.reflect-2::before {
+	content: "";
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: -90;
+	bottom: -100;
+	background: #6f6d8190;
+	border-radius: 100%;
+	transition: ease-in 0.7s;
 }
 
-.reflect-2:hover::before{
-  width: 400px;
-  height: 400px;
-  rotate: 30deg;
+.reflect-2:hover::before {
+	width: 400px;
+	height: 400px;
+	rotate: 30deg;
 }
 
 
 
 /* ////////////////////////////custom global////////////////////////////////////////// */
-.window{
+.window {
 	transition: all 0.4s;
 }
 
 
- .animate-blink {
-  animation: blink 1s steps(2, start) infinite;
- }
- @keyframes blink {
-  to {
-    visibility: hidden;
-   }
- }
+.animate-blink {
+	animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+	to {
+		visibility: hidden;
+	}
+}
+
+/* /////////////////////////////////////////////////////////// */
+.gate::before {
+	content: "";
+	bottom: -10;
+	left: 120px;
+	width: 280px;
+	height: 400px;
+	border-top-left-radius: 28px;
+	border-top-right-radius: 28px;
+	background-color: azure;
+	position: absolute;
+}
+
+.gate::after {
+	content: "";
+	bottom: -20;
+	left: 110px;
+	width: 280px;
+	height: 420px;
+	border: 2px white solid;
+	border-bottom: none;
+	border-top-left-radius: 28px;
+	border-top-right-radius: 28px;
+	background-color: rgba(240, 255, 255, 0);
+	position: absolute;
+}
+
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

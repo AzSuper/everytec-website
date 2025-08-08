@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, useSpring } from "motion/react";
 import LeftHeroSide from "./../components/LeftHeroSide";
 import RightSection from "./../components/RightSection";
 import "../components/styles/stars.css";
+import Particles from "@/components/Particles";
 
 const Hero = () => {
   // Scroll progress for the whole page
@@ -39,11 +40,18 @@ const Hero = () => {
       }}
       className="min-h-screen flex flex-col content-center md:flex-row lg:flex-row items-center justify-center relative overflow-hidden pt-16 mx-auto px-4 md:px-28 lg:px-32 mt-9"
     >
-      <div id="stars"></div>
+      <Particles
+        particleColors={["#ffffff", "#ffffff"]}
+        particleCount={600}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={true}
+        alphaParticles={false}
+        disableRotation={false}
+      />
       <LeftHeroSide />
-      <div id="stars2"></div>
       <RightSection />
-      <div id="stars3"></div>
     </motion.div>
   );
 };

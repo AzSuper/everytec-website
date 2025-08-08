@@ -145,7 +145,7 @@ function useTypingAnimation(lines: string[], isActive: boolean) {
       const timer = setTimeout(() => {
         setCurrentLineIndex((prev) => prev + 1);
         setCurrentText("");
-      }, 800);
+      }, 300);
       return () => clearTimeout(timer);
     }
   }, [currentText, currentLineIndex, lines, isActive]);
